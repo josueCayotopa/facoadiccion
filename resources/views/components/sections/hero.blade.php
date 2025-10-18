@@ -52,6 +52,8 @@
                 </p>
             </div>
 
+
+
             {{-- Features Icons --}}
             <div class="mt-8 md:mt-12 flex flex-wrap items-center justify-center gap-4 md:gap-8 text-white/60 px-4">
                 <div class="flex items-center gap-2">

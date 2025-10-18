@@ -373,6 +373,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+    {{-- Zona para inyectar modales desde vistas --}}
+    @stack('modals')
+
+    {{-- Vite assets (solo JS para no duplicar Tailwind del CDN) --}}
+    @vite('resources/js/app.js')
+
     @stack('scripts')
 </body>
 

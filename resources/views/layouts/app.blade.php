@@ -43,8 +43,60 @@
     <!-- AOS - Animate On Scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Vite Assets (Tailwind CSS included) -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#B11A1A',
+                            50: '#FDEAEA',
+                            100: '#FBD5D5',
+                            200: '#F7ABAB',
+                            300: '#F38181',
+                            400: '#EF5757',
+                            500: '#B11A1A',
+                            600: '#8E1515',
+                            700: '#6B1010',
+                            800: '#470B0B',
+                            900: '#240505',
+                        },
+                        secondary: {
+                            DEFAULT: '#0D3049',
+                            50: '#E6EDF2',
+                            100: '#CCDBE5',
+                            200: '#99B7CB',
+                            300: '#6693B1',
+                            400: '#336F97',
+                            500: '#0D3049',
+                            600: '#0A263A',
+                            700: '#081D2C',
+                            800: '#05131D',
+                            900: '#030A0F',
+                        },
+                        accent: {
+                            DEFAULT: '#669BBB',
+                            50: '#F0F5F8',
+                            100: '#E1EBF1',
+                            200: '#C3D7E3',
+                            300: '#A5C3D5',
+                            400: '#87AFC7',
+                            500: '#669BBB',
+                            600: '#527C96',
+                            700: '#3D5D71',
+                            800: '#293E4B',
+                            900: '#141F26',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 
     <!-- Custom Styles -->
     <style>

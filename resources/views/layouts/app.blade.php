@@ -103,6 +103,8 @@
         html {
             scroll-behavior: smooth;
         }
+        /* Evitar scroll horizontal por efectos full-bleed/transform */
+        html, body { overflow-x: hidden; }
 
         /* Animaciones personalizadas */
         @keyframes fadeIn {
@@ -154,7 +156,7 @@
             animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
 
-        /* Scrollbar personalizado */
+    /* Scrollbar personalizado */
         ::-webkit-scrollbar {
             width: 10px;
         }

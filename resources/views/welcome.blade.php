@@ -38,6 +38,9 @@
     {{-- Program Section --}}
     @include('components.sections.program')
 
+    {{-- Videos Section --}}
+    @include('components.sections.videos')
+
     {{-- Institutions Section --}}
     @include('components.sections.institutions')
 

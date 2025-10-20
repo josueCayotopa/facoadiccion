@@ -75,13 +75,13 @@
         overflow: hidden;
         min-height: 140px; /* evitar corte al hacer zoom */
     }
-    /* Full-bleed so el recorte sea al borde de la pantalla, no al padding del contenedor */
+    /* Full-bleed: usa dvw para no incluir el ancho de la barra de scroll y evitar overflow */
     .marquee--bleed {
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-        padding-left: calc(50vw - 50%);
-        padding-right: calc(50vw - 50%);
-        width: 100vw; /* asegura que el viewport defina el clipping */
+        margin-left: calc(50% - 50dvw);
+        margin-right: calc(50% - 50dvw);
+        padding-left: calc(50dvw - 50%);
+        padding-right: calc(50dvw - 50%);
+        width: 100dvw;
     }
     .marquee__track { display: flex; width: max-content; }
     .marquee__group { display: inline-flex; }

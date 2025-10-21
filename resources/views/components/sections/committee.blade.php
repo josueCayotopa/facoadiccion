@@ -7,33 +7,33 @@
             </h2>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-12">
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Presidente</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Presidente</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Vicepresidente</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Vicepresidente</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Secretaria General</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Secretaria General</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Sec. Asuntos Académicos y Científicos</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Sec. Asuntos Académicos y Científicos</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Sec. Marketing y Comunicaciones</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Sec. Marketing y Comunicaciones</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Sec. Tesorería</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Sec. Tesorería</p>
+
                 </div>
-                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all">
-                    <p class="text-accent font-semibold mb-2 text-sm md:text-base">Sec. Logística</p>
-                    <p class="text-base md:text-lg">Por confirmar</p>
+                <div class="bg-white/10 rounded-lg p-4 md:p-6 backdrop-blur-sm hover:bg-white/20 transition-all flex items-center justify-center text-center">
+                    <p class="text-white font-semibold mb-2 text-sm md:text-base">Sec. Logística</p>
+
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
     {{-- Decorative elements --}}
     <div class="absolute top-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
     <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
-    
+
     <div class="container mx-auto px-4 lg:px-8 relative z-10">
         <div class="max-w-6xl mx-auto">
             {{-- Animated Title --}}
@@ -25,7 +25,7 @@
                         las experiencias de los expertos de todo el mundo y las tendencias de la innovación tecnológica de la
                         industria oftalmológica.
                     </p>
-                    
+
                     <p class="text-base md:text-lg leading-relaxed"
                        data-aos="fade-right"
                        data-aos-delay="200"
@@ -35,7 +35,7 @@
                         actualización y fortalecimiento de nuestros conocimientos en beneficio de la capacitación continua
                         del oftalmólogo peruano para mejorar la atención de nuestros pacientes.
                     </p>
-                    
+
                     <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6 border border-white/20"
                          data-aos="fade-right"
                          data-aos-delay="300"
@@ -43,13 +43,13 @@
                         <p class="text-base md:text-lg leading-relaxed flex items-start gap-3">
                             <i class="fas fa-heart text-accent text-2xl mt-1 animate-pulse"></i>
                             <span>
-                                Facoadicción construirá una comunidad de seguidores o <strong class="text-accent">adictos al cuidado de la salud visual</strong>
+                                Facoadicción construirá una comunidad de seguidores <strong class="text-accent">adictos al cuidado de la salud visual</strong>
                                 para disminuir la ceguera en el Perú, trabajando muy cerca y de manera preferente con los residentes
-                                y fellows de todo el país.
+                                de todo el país.
                             </span>
                         </p>
                     </div>
-                    
+
                     {{-- Signature with animation --}}
                     <div class="mt-6 md:mt-8 flex items-center gap-4"
                          data-aos="fade-right"
@@ -70,14 +70,14 @@
                     <div class="relative group">
                         {{-- Glow effect --}}
                         <div class="absolute inset-0 bg-accent/30 rounded-lg blur-xl group-hover:bg-accent/50 transition-all duration-500"></div>
-                        
+
                         {{-- Image container --}}
                         <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 overflow-hidden border-4 md:border-8 border-white shadow-2xl rounded-lg transform transition-all duration-500 hover:scale-105 hover:rotate-2">
                             <img src="/images/ferminsilva.PNG"
                                  alt="Dr. Fermín Silva - Presidente del Congreso"
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                  loading="lazy">
-                            
+
                             {{-- Overlay on hover --}}
                             <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center p-6">
                                 <div class="text-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
@@ -86,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         {{-- Decorative corner elements --}}
                         <div class="absolute -top-2 -right-2 w-16 h-16 border-t-4 border-r-4 border-accent rounded-tr-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                         <div class="absolute -bottom-2 -left-2 w-16 h-16 border-b-4 border-l-4 border-accent rounded-bl-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
@@ -95,7 +95,7 @@
             </div>
 
             {{-- Statistics or highlights with counting animation --}}
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16">
+            {{-- <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16">
                 <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
                      data-aos="zoom-in"
                      data-aos-delay="100">
@@ -104,16 +104,16 @@
                     </div>
                     <p class="text-xs md:text-sm text-white/80">Días de Congreso</p>
                 </div>
-                
+
                 <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
                      data-aos="zoom-in"
                      data-aos-delay="200">
                     <div class="text-3xl md:text-4xl font-bold text-accent mb-2">
-                        <span class="counter" data-target="50">0</span>+
+                        <span class="counter" data-target="30">0</span>+
                     </div>
                     <p class="text-xs md:text-sm text-white/80">Expertos Internacionales</p>
                 </div>
-                
+
                 <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
                      data-aos="zoom-in"
                      data-aos-delay="300">
@@ -122,7 +122,7 @@
                     </div>
                     <p class="text-xs md:text-sm text-white/80">Ponencias</p>
                 </div>
-                
+
                 <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 hover:bg-white/20 transition-all duration-300"
                      data-aos="zoom-in"
                      data-aos-delay="400">
@@ -131,7 +131,7 @@
                     </div>
                     <p class="text-xs md:text-sm text-white/80">Asistentes Esperados</p>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -142,13 +142,13 @@
     // Counter animation
     document.addEventListener('DOMContentLoaded', function() {
         const counters = document.querySelectorAll('.counter');
-        
+
         const animateCounter = (counter) => {
             const target = parseInt(counter.getAttribute('data-target'));
             const duration = 2000; // 2 seconds
             const increment = target / (duration / 16); // 60fps
             let current = 0;
-            
+
             const updateCounter = () => {
                 current += increment;
                 if (current < target) {
@@ -158,10 +158,10 @@
                     counter.textContent = target;
                 }
             };
-            
+
             updateCounter();
         };
-        
+
         // Trigger animation when section is visible
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -174,7 +174,7 @@
                 }
             });
         }, { threshold: 0.5 });
-        
+
         counters.forEach(counter => observer.observe(counter));
     });
 </script>

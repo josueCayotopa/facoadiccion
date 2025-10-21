@@ -20,7 +20,7 @@
                     [
                         'icon' => 'file-alt',
                         'title' => 'Trabajos de Investigación',
-                        'description' => 'Concurso de trabajos de investigación publicados para R3. Comparte tus hallazgos científicos.',
+                        'description' => 'Concurso de trabajos de investigación publicados para R1,R2 y R3. Comparte tus hallazgos científicos.',
                         'award' => 'Reconocimiento a la investigación'
                     ],
                     [
@@ -44,7 +44,7 @@
                         <p class="text-white/90 mb-4 text-sm md:text-base">
                             {{ $contest['description'] }}
                         </p>
-                        <div class="flex items-center gap-2 text-accent">
+                        <div class="flex items-center gap-2 text-white">
                             <i class="fas fa-trophy"></i>
                             <span class="font-semibold text-sm md:text-base">{{ $contest['award'] }}</span>
                         </div>

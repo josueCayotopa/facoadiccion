@@ -6,87 +6,56 @@
                 Profesores Invitados
             </h2>
 
-            <div class="space-y-8 md:space-y-12">
-                {{-- Profesores de La Luz --}}
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Profesores de La Luz</h3>
-                    <div class="bg-gray-50 rounded-lg p-4 md:p-6">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center">
-                            @foreach([
-                                'Dr. Fermín Silva', 'Dr. Alejandro Silva', 'Dr. Edgar Gonzales', 'Dra. Luisa Gonzales',
-                                'Dr. Victor Viaña', 'Dr. Roberto Valvuena', 'Dr. Jorge Vega', 'Dra. Evelyn Eneque',
-                                'Dra. Fabiola Custodio', 'Dr. Yoaner Martin', 'Dr. Sergio Sanchez', 'Dr. Ernesto Alimañy Rubio',
-                                'Dr. Eduardo Zans', 'Dra. Marita Masedo'
-                            ] as $speaker)
-                                <div class="text-gray-700 text-sm md:text-base py-2">{{ $speaker }}</div>
-                            @endforeach
+            <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <!-- Profesores Nacionales -->
+                <a href="#profesores-nacionales" class="group relative overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-red-600/10 via-indigo-500/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-7 md:p-9 relative">
+                        <div class="flex items-center gap-3">
+                            <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-red-600 to-orange-500 text-white grid place-items-center shadow-lg">
+                                <i class="fas fa-flag text-lg"></i>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Profesores Nacionales</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            Referentes locales que impulsan iniciativas y proyectos con impacto inmediato.
+                        </p>
+                        <div class="mt-6 flex items-center gap-2 text-sm font-semibold text-red-700">
+                            <span>Explorar</span>
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
                         </div>
                     </div>
-                </div>
+                    <!-- decoraciones -->
+                    <div class="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 blur-2xl"></div>
+                    <div class="pointer-events-none absolute -left-10 -bottom-12 h-36 w-36 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 blur-2xl"></div>
+                </a>
 
-                {{-- Ex Fellows --}}
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Profesores Ex-Fellows</h3>
-                    <div class="bg-gray-50 rounded-lg p-4 md:p-6">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center">
-                            @foreach([
-                                'Dr. Raul Plasencia', 'Dra. Claudia Sotomayor', 'Dr. Carlos Ortega', 'Dr. Eduardo Tarazona',
-                                'Dr. Klever Apolo', 'Dra. Zulema', 'Dr. Jose Luis', 'Dr. Juan Carlos Hanampa'
-                            ] as $speaker)
-                                <div class="text-gray-700 text-sm md:text-base py-2">{{ $speaker }}</div>
-                            @endforeach
+                <!-- Profesores Internacionales -->
+                <a href="#profesores-internacionales" class="group relative overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-indigo-500/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div class="p-7 md:p-9 relative">
+                        <div class="flex items-center gap-3">
+                            <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white grid place-items-center shadow-lg">
+                                <i class="fas fa-globe-americas text-lg"></i>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Profesores Internacionales</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            Expertos de la región y el mundo que potencian nuestra visión global.
+                        </p>
+                        <div class="mt-6 flex items-center gap-2 text-sm font-semibold text-blue-700">
+                            <span>Descubrir</span>
+                            <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
                         </div>
                     </div>
-                </div>
-
-                {{-- Profesores Nacionales --}}
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Profesores Nacionales (Perú)</h3>
-                    <div class="bg-gray-50 rounded-lg p-4 md:p-6">
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 text-center">
-                            @foreach([
-                                'Dr. Felipe Torres', 'Dr. Edmar Uribe', 'Dr. Cristian Beker', 'Dr. Jorge Velasco',
-                                'Dr. Jorge Ruiz', 'Dra. Karina Arellano', 'Dr. Cesar Diaz', 'Dra. Daniela Roca',
-                                'Dr. JC Corbera', 'Dr. Miguel Guzman', 'Dr. Antonio Roca', 'Dr. Carlos Wong Jr',
-                                'Dra. Vanesa Pongo'
-                            ] as $speaker)
-                                <div class="text-gray-700 text-sm md:text-base py-2">{{ $speaker }}</div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Profesores Internacionales --}}
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6 text-center">Profesores Internacionales</h3>
-                    <div class="bg-gray-50 rounded-lg p-4 md:p-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                            @foreach([
-                                ['name' => 'Dr. David Flikier', 'country' => 'Costa Rica'],
-                                ['name' => 'Dr. Jorge Pacheco', 'country' => 'México'],
-                                ['name' => 'Dr. Antonio Sierra Acevedo', 'country' => 'México'],
-                                ['name' => 'Dr. Luis Scaf', 'country' => 'Colombia'],
-                                ['name' => 'Dr. Lyle Neywall', 'country' => 'Colombia'],
-                                ['name' => 'Dr. Gerardo Valvecchia', 'country' => 'Argentina'],
-                                ['name' => 'Dra. Bruna Ventura', 'country' => 'Brasil'],
-                                ['name' => 'Dr. Carlos Arce', 'country' => 'Brasil'],
-                                ['name' => 'Dr. Lusio Maranhao', 'country' => 'Brasil'],
-                                ['name' => 'Dr. Pedro Bertino', 'country' => 'Brasil'],
-                                ['name' => 'Dr. Fernando Soler', 'country' => 'España'],
-                                ['name' => 'Dr. Agarwal', 'country' => 'India'],
-                                ['name' => 'Dr. Ay Kamed', 'country' => 'Canadá'],
-                                ['name' => 'Dr. Paolo Ferrara', 'country' => 'Brasil'],
-                                ['name' => 'Dr. Ibrain Piloto', 'country' => 'Cuba'],
-                                ['name' => 'Dr. Raul Hernandez', 'country' => 'Cuba']
-                            ] as $speaker)
-                                <div class="flex justify-between items-center border-b border-gray-200 pb-2">
-                                    <span class="text-gray-700 font-semibold text-sm md:text-base">{{ $speaker['name'] }}</span>
-                                    <span class="text-gray-600 text-xs md:text-sm">{{ $speaker['country'] }}</span>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
+                    <!-- decoraciones -->
+                    <div class="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 blur-2xl"></div>
+                    <div class="pointer-events-none absolute -left-10 -bottom-12 h-36 w-36 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 blur-2xl"></div>
+                </a>
             </div>
         </div>
     </div>

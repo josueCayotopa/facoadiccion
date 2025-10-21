@@ -8,12 +8,12 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-12">
                 @foreach ([
-                    ['icon' => 'microscope', 'title' => 'Segmento Anterior', 'responsible' => 'Dr. Alejandro Silva'],
+                    ['icon' => 'microscope', 'title' => 'Segmento Anterior', 'responsible' => 'Alejandro Silva y Jorge Vega'],
                     ['icon' => 'eye', 'title' => 'Córnea', 'responsible' => 'Dr. Fermín Silva'],
                     ['icon' => 'star', 'title' => 'Superficie Ocular', 'responsible' => 'Dra. Luisa Gonzalez'],
-                    ['icon' => 'glasses', 'title' => 'Cirugía Refractiva', 'responsible' => 'Por confirmar'],
+                    ['icon' => 'glasses', 'title' => 'Cirugía Refractiva', 'responsible' => 'Dr. Edgar Gonazalez'],
                     ['icon' => 'circle', 'title' => 'Glaucoma', 'responsible' => 'Dr. Yoaner Martins, Dr. Meiday Julio Blanco'],
-                    ['icon' => 'eye-dropper', 'title' => 'Retina', 'responsible' => 'Dr. Eduardo, Dr. Sergio, Dr. Alemani']
+                    ['icon' => 'eye-dropper', 'title' => 'Retina', 'responsible' => 'Dr. Sergio, Dr. Alemani']
                 ] as $activity)
                     <div class="act-card bg-white rounded-lg shadow-lg p-6 md:p-8 hover:shadow-xl transition-shadow">
                         <div class="flex items-center gap-3 mb-4">
@@ -49,7 +49,7 @@
                             <img src="/images/avatar.png" alt="Dr. Edgar Gonzales"
                                 class="w-7 h-7 rounded-full ring-2 ring-primary/20 bg-white object-cover"
                                 loading="lazy">
-                            <span class="text-gray-700 text-sm md:text-base">Dr. Edgar Gonzales</span>
+                            <span class="text-gray-700 text-sm md:text-base">Por confirmar</span>
                         </div>
                     </div>
                 </div>

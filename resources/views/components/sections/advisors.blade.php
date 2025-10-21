@@ -1,243 +1,67 @@
-{{-- Advisors Section --}}
-<section class="py-12 md:py-20 bg-gray-100">
+{{-- Advisors Section (solo título) --}}
+<section class="relative py-20 md:py-32 bg-gradient-to-b from-white to-gray-50">
     <div class="container mx-auto px-4 lg:px-8">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 gradient-title">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-indigo-500 to-blue-600">
                 Comité de Asesores
-            </h2>
+            </h1>
+            <div class="mt-6 h-1 w-24 md:w-32 mx-auto rounded-full bg-gradient-to-r from-red-600 to-blue-600"></div>
+            <p class="mt-6 text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+                Nuestro comité reúne a especialistas destacados que orientan la excelencia académica y clínica.
+            </p>
+        </div>
 
-            {{-- Asesores Nacionales --}}
-            <div class="mb-12 md:mb-16">
-                <h3 class="text-xl md:text-2xl font-bold text-center mb-6 md:mb-8 gradient-title">Asesores Nacionales</h3>
-                <div class="marquee marquee--bleed js-marquee py-6" data-direction="left" data-speed="30" aria-label="Carrusel de asesores nacionales">
-                    <div class="marquee__track">
-                        <div class="marquee__group flex items-stretch gap-6 md:gap-8">
-                            @foreach([
-                                'Dr. Antonio Roca',
-                                'Dr. Juan Carlos Corbera',
-                                'Dr. Felipe Torres',
-                                'Dr. Dino Nateri',
-                                'Dr. Jose Maria Viaña Perez'
-                            ] as $advisor)
-                                <div class="flex flex-col items-center avatar-card">
-                                    <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-gray-300 shadow-lg mb-3 bg-white avatar-ring">
-                                        <img src="/images/avatar.png"
-                                            alt="{{ $advisor }}"
-                                            class="w-full h-full object-cover avatar-img"
-                                            loading="lazy">
-                                    </div>
-                                    <p class="text-center font-semibold text-gray-800 text-xs md:text-sm">{{ $advisor }}</p>
-                                </div>
-                            @endforeach
+        <!-- Tarjetas de comités -->
+        <div class="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+            <!-- Comité Nacionales -->
+            <a href="#comite-nacionales" class="group relative overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
+                <div class="absolute inset-0 bg-gradient-to-tr from-red-600/10 via-indigo-500/10 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div class="p-7 md:p-9 relative">
+                    <div class="flex items-center gap-3">
+                        <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-red-600 to-orange-500 text-white grid place-items-center shadow-lg">
+                            <i class="fas fa-flag text-lg"></i>
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Comité Nacionales</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Referentes locales que impulsan iniciativas y proyectos con impacto inmediato.
+                    </p>
+                    <div class="mt-6 flex items-center gap-2 text-sm font-semibold text-red-700">
+                        <span>Explorar</span>
+                        <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
                     </div>
                 </div>
-            </div>
+                <!-- decoraciones -->
+                <div class="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 blur-2xl"></div>
+                <div class="pointer-events-none absolute -left-10 -bottom-12 h-36 w-36 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 blur-2xl"></div>
+            </a>
 
-            {{-- Asesores Internacionales --}}
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold text-center mb-6 md:mb-8 gradient-title">Asesores Internacionales</h3>
-                <div class="marquee marquee--bleed js-marquee marquee--right py-6" data-direction="right" data-speed="32" aria-label="Carrusel de asesores internacionales">
-                    <div class="marquee__track">
-                        <div class="marquee__group flex items-stretch gap-6 md:gap-8">
-                            @foreach([
-                                ['name' => 'Dr. Luis Scaf', 'country' => 'Colombia'],
-                                ['name' => 'Dr. Gerardo Valvecchia', 'country' => 'Argentina'],
-                                ['name' => 'Dr. Eduardo Chavez', 'country' => 'México'],
-                                ['name' => 'Dr. Jorge Pacheco', 'country' => 'México'],
-                                ['name' => 'Dr. Antonio Sierra', 'country' => 'México'],
-                                ['name' => 'Dr. Lyle Neywall', 'country' => 'Colombia'],
-                                ['name' => 'Dr. David Flikier', 'country' => 'Costa Rica']
-                            ] as $advisor)
-                                <div class="flex flex-col items-center avatar-card">
-                                    <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-4 border-primary shadow-lg mb-3 bg-white avatar-ring">
-                                        <img src="/images/avatar.png"
-                                            alt="{{ $advisor['name'] }}"
-                                            class="w-full h-full object-cover avatar-img"
-                                            loading="lazy">
-                                    </div>
-                                    <p class="text-center font-semibold text-gray-800 text-xs md:text-sm">{{ $advisor['name'] }}</p>
-                                    <p class="text-center text-[10px] md:text-xs text-gray-600">{{ $advisor['country'] }}</p>
-                                </div>
-                            @endforeach
+            <!-- Comité Internacionales -->
+            <a href="#comite-internacionales" class="group relative overflow-hidden rounded-2xl bg-white shadow-xl ring-1 ring-black/5 transition-transform duration-300 hover:-translate-y-1">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-600/10 via-indigo-500/10 to-cyan-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div class="p-7 md:p-9 relative">
+                    <div class="flex items-center gap-3">
+                        <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-500 text-white grid place-items-center shadow-lg">
+                            <i class="fas fa-globe-americas text-lg"></i>
                         </div>
+                        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Comité Internacionales</h3>
+                    </div>
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Expertos de la región y el mundo que potencian nuestra visión global.
+                    </p>
+                    <div class="mt-6 flex items-center gap-2 text-sm font-semibold text-blue-700">
+                        <span>Descubrir</span>
+                        <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 11-1.414-1.414L13.586 10H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
                     </div>
                 </div>
-            </div>
+                <!-- decoraciones -->
+                <div class="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 blur-2xl"></div>
+                <div class="pointer-events-none absolute -left-10 -bottom-12 h-36 w-36 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-500/20 blur-2xl"></div>
+            </a>
         </div>
     </div>
 </section>
-
-@push('styles')
-<style>
-    .marquee {
-        position: relative;
-        overflow: hidden;
-        min-height: 140px; /* evitar corte al hacer zoom */
-    }
-    /* Full-bleed: usa dvw para no incluir el ancho de la barra de scroll y evitar overflow */
-    .marquee--bleed {
-        margin-left: calc(50% - 50dvw);
-        margin-right: calc(50% - 50dvw);
-        padding-left: calc(50dvw - 50%);
-        padding-right: calc(50dvw - 50%);
-        width: 100dvw;
-    }
-    .marquee__track { display: flex; width: max-content; }
-    .marquee__group { display: inline-flex; }
-        .marquee__group { gap: 2rem; }
-        .avatar-card { min-width: 9rem; /* espacio consistente aunque el nombre sea corto */ }
-    .marquee:hover .marquee__track { }
-
-
-            /* Hover avatar effect */
-        .avatar-card .avatar-img {
-            transition: transform 300ms ease, filter 300ms ease;
-            will-change: transform;
-        }
-        .avatar-card:hover .avatar-img {
-                transform: scale(1.02);
-            filter: none;
-        }
-        .avatar-card .avatar-ring {
-            transition: box-shadow 300ms ease;
-        }
-        .avatar-card:hover .avatar-ring {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15), 0 0 0 4px rgba(177, 26, 26, 0.15) inset;
-        }
-
-            /* Elastic scale of entire card */
-            .avatar-card { transform: translateZ(0); will-change: transform; }
-                .avatar-card.hovered { transform: scale(1.06); }
-            .avatar-card.elastic-in { animation: avatar-elastic-in 800ms cubic-bezier(.22,1.4,.36,1) both; }
-            .avatar-card.elastic-out { animation: avatar-elastic-out 620ms cubic-bezier(.22,1,.36,1) both; }
-
-            @keyframes avatar-elastic-in {
-                0% { transform: scale(1); }
-                45% { transform: scale(1.14); }
-                70% { transform: scale(1.05); }
-                85% { transform: scale(1.10); }
-                100% { transform: scale(1.08); }
-            }
-            @keyframes avatar-elastic-out {
-                0% { transform: scale(1.06); }
-                40% { transform: scale(0.98); }
-                70% { transform: scale(1.02); }
-                100% { transform: scale(1); }
-            }
-
-    /* Animated gradient title */
-    .gradient-title {
-        /* fallback color for older browsers */
-        color: #111827; /* tailwind gray-800 */
-        background: linear-gradient(
-            90deg,
-            #B11A1A,
-            #8f68ff,
-            #487bff,
-            #8f68ff,
-            #B11A1A
-        );
-        background-size: 200% auto;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: title-gradient-move 3s linear infinite;
-    }
-    @keyframes title-gradient-move {
-        to { background-position: 200% center; }
-    }
-</style>
-@endpush
-
-        @push('scripts')
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // Elastic hover for avatar cards
-                const cards = document.querySelectorAll('.avatar-card');
-                cards.forEach(card => {
-                    card.addEventListener('mouseenter', () => {
-                        card.classList.remove('elastic-out');
-                        card.classList.add('hovered');
-                        // restart elastic-in animation
-                        card.classList.remove('elastic-in');
-                        void card.offsetWidth; // reflow
-                        card.classList.add('elastic-in');
-                    }, { passive: true });
-
-                    card.addEventListener('mouseleave', () => {
-                        card.classList.remove('elastic-in');
-                        // start elastic-out, keep hovered until animation ends
-                        void card.offsetWidth;
-                        card.classList.add('elastic-out');
-                    }, { passive: true });
-
-                    card.addEventListener('animationend', () => {
-                        if (card.classList.contains('elastic-out')) {
-                            card.classList.remove('elastic-out');
-                            card.classList.remove('hovered');
-                        } else if (card.classList.contains('elastic-in')) {
-                            card.classList.remove('elastic-in');
-                        }
-                    });
-                });
-
-                // Seamless marquee with single content
-                const makeTicker = (container) => {
-                    const track = container.querySelector('.marquee__track');
-                    const group = track.querySelector('.marquee__group');
-                    if (!track || !group) return;
-
-                    // Clone items until track width exceeds container width x2 (buffer)
-                    const containerWidth = container.clientWidth;
-                    let totalWidth = group.scrollWidth;
-                    while (totalWidth < containerWidth * 2) {
-                        const clone = group.cloneNode(true);
-                        clone.setAttribute('aria-hidden', 'true');
-                        track.appendChild(clone);
-                        totalWidth += group.scrollWidth;
-                    }
-
-                    // Animation state
-                    const dir = container.dataset.direction === 'right' ? 1 : -1;
-                    const speed = parseFloat(container.dataset.speed || '30'); // px/seg
-                    let offset = 0;
-                    let rafId;
-                    let lastTs = performance.now();
-                    let paused = false;
-
-                    const step = (ts) => {
-                        const dt = (ts - lastTs) / 1000; // seg
-                        lastTs = ts;
-                        if (!paused) {
-                            offset += dir * speed * dt;
-                            const groupWidth = group.scrollWidth;
-                            // wrap-around para efecto infinito, usando ancho del primer grupo
-                            if (dir < 0) {
-                                if (offset <= -groupWidth) {
-                                    offset += groupWidth;
-                                }
-                            } else {
-                                if (offset >= 0) {
-                                    offset -= groupWidth;
-                                }
-                            }
-                            track.style.transform = `translateX(${offset}px)`;
-                        }
-                        rafId = requestAnimationFrame(step);
-                    };
-
-                    const onEnter = () => { paused = true; };
-                    const onLeave = () => { paused = false; lastTs = performance.now(); };
-                    container.addEventListener('mouseenter', onEnter);
-                    container.addEventListener('mouseleave', onLeave);
-
-                    // Init
-                    track.style.willChange = 'transform';
-                    requestAnimationFrame((t) => { lastTs = t; step(t); });
-                };
-
-                document.querySelectorAll('.js-marquee').forEach(makeTicker);
-            });
-        </script>
-        @endpush

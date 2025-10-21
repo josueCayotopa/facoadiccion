@@ -24,7 +24,7 @@
             </div>
 
             {{-- Event Info Cards --}}
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 mb-10 md:mb-14">
+            {{-- <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 mb-10 md:mb-14">
                 <div class="w-full md:w-auto flex items-center gap-3 md:gap-4 bg-white/10 backdrop-blur-md rounded-full px-6 md:px-8 py-3 md:py-4 border border-white/20 hover:bg-white/20 transition-all">
                     <i class="fas fa-calendar-alt text-accent text-2xl md:text-3xl"></i>
                     <div class="text-left">
@@ -39,7 +39,7 @@
                         <p class="text-base md:text-xl font-bold text-white">Westin Hotel, Lima - Perú</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             {{-- CTA Section --}}
             <div class="flex flex-col items-center gap-4 md:gap-5">

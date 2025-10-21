@@ -6,7 +6,7 @@
                 Programa del Evento
             </h2>
             <p class="text-lg md:text-xl text-gray-600 mb-8 md:mb-12">
-                5 al 7 de Junio, 2026 - Westin Hotel, Lima, Perú
+                Diciembre, 2026 - Lima, Perú
             </p>
 
             <div class="mb-8 md:mb-12">

@@ -1,19 +1,30 @@
 {{-- Facoadicción Info Section --}}
-<section id="info-facoadiccion" class="py-12 md:py-20 bg-white">
-    <div class="container mx-auto px-4 lg:px-8">
+<section id="info-facoadiccion" class="relative overflow-hidden py-12 md:py-20 bg-black">
+    <!-- Fondo con imagen y overlay para contraste -->
+    <div class="absolute inset-0">
+        <div class="absolute inset-0" style="background-image: url('{{ asset('images/Mesa de trabajo 1.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="absolute inset-0 bg-black/70"></div>
+    </div>
+    <div class="container relative z-10 mx-auto px-4 lg:px-8">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
                 <!-- Columna 1: título + texto introductorio -->
-                <div class="flex flex-col justify-center">
+                <div class="flex flex-col justify-center items-center text-center">
                     <div class="mb-5 md:mb-6">
-                        <h2 class="ifa-title text-4xl md:text-6xl font-black mb-2 md:mb-3 text-left">
-                            <span class="text-primary">FACO</span><span class="text-gray-800">ADICCIÓN</span>
+                        <h2 class="ifa-title mb-2 md:mb-3 text-left">
+                            <img
+                                src="{{ asset('images/logo-facoadiccion.png') }}"
+                                alt="Facoadicción"
+                                class="h-20 md:h-28 lg:h-32 w-auto select-none mx-auto"
+                                loading="lazy"
+                                decoding="async"
+                            />
                         </h2>
-                        <p class="ifa-subtitle text-xl md:text-2xl text-accent font-semibold text-left">
-                            Construyendo una comunidad de adictos a la excelencia quirúrgica
+                        <p class="ifa-subtitle text-xl md:text-2xl text-white font-semibold text-center">
+                            Construyendo una comunidad de adictos en la excelencia quirúrgica
                         </p>
                     </div>
-                    <p class="ifa-intro text-base md:text-lg text-gray-700 leading-relaxed">
+                    <p class="ifa-intro text-base md:text-lg text-gray-200 leading-relaxed text-center">
                         Facoadicción es más que un congreso, es una experiencia inmersiva en el mundo de la cirugía de catarata
                         y segmento anterior. Reunimos a los mejores especialistas internacionales para compartir conocimientos,
                         técnicas innovadoras y casos clínicos que desafían los límites de la oftalmología moderna.
@@ -22,12 +33,12 @@
 
                 <!-- Columna 2: tarjeta informativa con lista en carrusel vertical -->
                 <div class="ifa-card bg-primary text-white rounded-2xl md:rounded-3xl p-6 md:p-10 shadow-2xl">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">¿Qué es Facoadicción?</h3>
-                    <p class="text-base md:text-lg leading-relaxed mb-5 md:mb-6 opacity-95">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6">CONTENIDO DE FACOADICCION 2026</h3>
+                    {{-- <p class="text-base md:text-lg leading-relaxed mb-5 md:mb-6 opacity-95">
                         Un congreso internacional dedicado exclusivamente a la cirugía de facoemulsificación, técnicas avanzadas
                         de catarata, y las últimas innovaciones en segmento anterior. Durante tres días intensivos, los participantes
                         tendrán acceso a:
-                    </p>
+                    </p> --}}
 
                     <!-- Carrusel vertical (ticker) -->
                     <div class="vt js-vt" data-speed="28" data-visible="3" aria-live="polite">
@@ -35,7 +46,7 @@
                             <li class="vt__item">
                                 <div class="vt__chip">
                                     <i class="fas fa-check-circle text-primary"></i>
-                                    <span>Conferencias magistrales de expertos internacionales</span>
+                                    <span>Conferencias magistrales de expertos nacionales e internacionales</span>
                                 </div>
                             </li>
                             <li class="vt__item">
@@ -47,7 +58,7 @@
                             <li class="vt__item">
                                 <div class="vt__chip">
                                     <i class="fas fa-check-circle text-primary"></i>
-                                    <span>Talleres prácticos con simuladores de última generación</span>
+                                    <span>Wetlab de córnea</span>
                                 </div>
                             </li>
                             <li class="vt__item">
